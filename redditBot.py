@@ -9,8 +9,19 @@ class reddit_bot:
         reddit.read_only = read_only
         self.reddit = reddit
         self.subreddit = self.reddit.subreddit(subreddit)
-        self.subreddit.new(limit=5)
     
     def subredditCommand(self, command : str):
         return getattr(self.subreddit, command)
+
+    def getNewSubreddits(self):
+        return self.subreddit.new
+    
+    def getHotSubreddits(self):
+        return self.subreddit.hot
+
+    def getPostById(self, iDStr):
+        return self.reddit.submission(id=iDStr)
+
+    def getSubscribers(self):
+        return self.subreddit.subscribers
     
