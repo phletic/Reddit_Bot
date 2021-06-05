@@ -1,7 +1,7 @@
 {
-    "client_id":"",
-    "client_secret":"",
-    "password":"",
+    "client_id":"SECRET",
+    "client_secret":"SECRET",
+    "password":"SECRET",
     "user_agent":"comment bot",
     "redirect_uri":"https://www.reddit.com",
     "username":"ASR_BOT"
